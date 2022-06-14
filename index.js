@@ -3,7 +3,6 @@ const { Client, Intents, Collection, MessageEmbed } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const { token } = require('./config.json');
 const prefix = "!";
-const cron = require('cron');
 const db = require('quick.db');
 
 client.commands = new Collection();
